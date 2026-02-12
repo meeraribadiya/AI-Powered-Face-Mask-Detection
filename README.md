@@ -1,40 +1,45 @@
-# 🛡️ AI-Powered Face Mask Detection: Real-Time Access Control System
+# 🛡️ AI-Powered Face Mask Detection  
+### Real-Time Access Control System
 
-## 🔍 Project Overview
-AI-Powered Face Mask Detection is a real-time security system that monitors face mask compliance using Computer Vision and Machine Learning.
 
-The system detects human faces, checks whether a mask is worn or not, and provides instant audio-visual feedback for access control.
 
-This project is built using Python and OpenCV and can be used in schools, offices, hospitals, and secure facilities.
+## 🔍 Overview
+
+AI-Powered Face Mask Detection is a real-time security system built using **Python** and **OpenCV**.  
+It detects human faces, verifies mask compliance, and provides instant **audio-visual feedback** for access control.
+
+This system can be deployed in:
+- Schools  
+- Offices  
+- Hospitals  
+- Secure Facilities  
 
 
 
 ## ✨ Key Features
 
-- Real-Time Face Detection using Haar Cascade Classifier
-- Audio Alert System (1500Hz buzzer for "No Mask")
-- Green Box → Mask OK (Access Granted)
-- Red Box + Beep → No Mask (Access Denied)
-- LBPH Face Recognition Algorithm
+- Real-Time Face Detection (Haar Cascade)
+- Mask / No-Mask Classification using LBPH
+- Green Box → Access Granted
+- Red Box + 1500Hz Beep → Access Denied
 - Confidence Threshold System (Threshold: 185)
 - Dataset Collection Module
-- Full-Screen Display Support (1280x720)
-- Histogram Equalization for better lighting handling
-- Frame Stability Logic to prevent flickering
+- Histogram Equalization (Better Lighting Handling)
+- Full Screen Display (1280x720)
 
 
 
 ## 🛠️ Tech Stack
 
-Language: Python 3.x  
-Libraries: OpenCV, NumPy, OS, Winsound  
-Algorithm: LBPH (Local Binary Patterns Histogram)  
-Face Detection: Haar Cascade Classifier  
-
+- **Language:** Python 3.x  
+- **Libraries:** OpenCV, NumPy, OS, Winsound  
+- **Algorithm:** LBPH (Local Binary Patterns Histogram)  
+- **Face Detection:** Haar Cascade Classifier  
 
 
 ## 📁 Project Structure
-```text
+
+```
 FACE_MASK_DETECTION/
 │
 ├── dataset/
@@ -49,85 +54,70 @@ FACE_MASK_DETECTION/
 ```
 
 
-## 🚀 How to Run the Project
+
+## 🚀 How to Run
 
 ### 1️⃣ Install Dependencies
 
-Open terminal and run:
-
+```bash
 pip install opencv-contrib-python numpy
+```
 
+### 2️⃣ Collect Dataset
 
+Capture ~100 images for:
+- With Mask  
+- Without Mask  
 
-### 2️⃣ Data Collection
-
-Collect around 100 images for each category (with mask & without mask).  
-Move your head slightly while capturing images for better accuracy.
-
-Run:
-
+```bash
 python capture_photos.py
+```
 
 
 
-### 3️⃣ Training
+### 3️⃣ Train Model
 
-Train the AI model using your collected dataset.
-
-Run:
-
+```bash
 python train_ai.py
+```
 
-This will generate:
+This generates:
+
+```
 trained_model.xml
+```
 
 
 
-### 4️⃣ Final Detection
+### 4️⃣ Start Real-Time Detection
 
-Start the real-time mask detection system:
-
+```bash
 python detect_mask.py
+```
 
-Press 'Q' to exit the program.
-
-
-
-## 📊 System Logic
-
-Step 1: Face Detection  
-The system detects faces using haarcascade_frontalface_default.xml.
-
-Step 2: Recognition  
-LBPH algorithm generates a texture map and compares it with trained data.
-
-Step 3: Thresholding  
-If confidence score is below 185 → Mask OK  
-If confidence score is above 185 → PLEASE WEAR A MASK
-
-Step 4: Feedback  
-Green box = Access Granted  
-Red box + Beep = Access Denied  
+Press **Q** to exit.
 
 
 
-## 🤝 Acknowledgments
+## ⚙️ System Logic
 
-OpenCV – For providing an open-source Computer Vision library.  
-LBPH Research – For texture-based recognition algorithm.  
+1. Face detected using Haar Cascade  
+2. LBPH extracts facial texture features  
+3. Confidence score evaluated  
+   - < 185 → Mask OK  
+   - > 185 → Wear a Mask  
+4. System gives visual + audio feedback  
 
 
 
 ## 📌 Future Improvements
 
-- Deep Learning based CNN model integration  
-- Cloud database integration  
-- Mobile app support  
-- Multi-user detection system  
+- CNN-based Deep Learning Model  
+- Cloud Database Integration  
+- Mobile Application Support  
 
 
 
- Developed By: Mira Ribadiya  
+## 👩‍💻 Developed By
 
-
-
+**Mira Ribadiya**
