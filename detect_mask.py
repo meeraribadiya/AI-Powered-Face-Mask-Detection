@@ -57,7 +57,7 @@ else:
 
             # STABILITY LOGIC
             if mask_counter >= 2:
-                status, color = "MASK DETECTED", (0, 255, 0)
+                status, color = "MASK OK!", (0, 255, 0)
                 msg = "ACCESS GRANTED"
             elif no_mask_counter >= 2:
                 status, color = "PLEASE WEAR A MASK!", (0, 0, 255)
@@ -83,3 +83,4 @@ else:
     cap.release()
 
     cv2.destroyAllWindows()
+
