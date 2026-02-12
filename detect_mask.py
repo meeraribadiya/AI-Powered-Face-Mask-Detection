@@ -60,7 +60,7 @@ else:
                 status, color = "MASK DETECTED", (0, 255, 0)
                 msg = "ACCESS GRANTED"
             elif no_mask_counter >= 2:
-                status, color = "NO MASK!", (0, 0, 255)
+                status, color = "PLEASE WEAR A MASK!", (0, 0, 255)
                 msg = "WARNING: ACCESS DENIED"
                 winsound.Beep(1500, 200) 
             else:
@@ -81,4 +81,5 @@ else:
             break
 
     cap.release()
+
     cv2.destroyAllWindows()
