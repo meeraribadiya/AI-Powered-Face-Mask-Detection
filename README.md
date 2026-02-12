@@ -46,7 +46,7 @@ FACE_MASK_DETECTION/
 ├── detect_mask.py
 ├── trained_model.xml
 └── README.md
-
+```
 
 
 ## 🚀 How to Run the Project
@@ -128,5 +128,6 @@ LBPH Research – For texture-based recognition algorithm.
 
 
  Developed By: Mira Ribadiya  
+
 
 
