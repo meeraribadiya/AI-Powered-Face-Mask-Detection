@@ -34,7 +34,7 @@ Face Detection: Haar Cascade Classifier
 
 
 ## 📁 Project Structure
-
+```text
 FACE_MASK_DETECTION/
 │
 ├── dataset/
@@ -128,4 +128,5 @@ LBPH Research – For texture-based recognition algorithm.
 
 
  Developed By: Mira Ribadiya  
+
 
