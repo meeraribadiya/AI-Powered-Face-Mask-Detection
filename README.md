@@ -7,7 +7,7 @@ The system detects human faces, checks whether a mask is worn or not, and provid
 
 This project is built using Python and OpenCV and can be used in schools, offices, hospitals, and secure facilities.
 
----
+
 
 ## ✨ Key Features
 
@@ -22,7 +22,7 @@ This project is built using Python and OpenCV and can be used in schools, office
 - Histogram Equalization for better lighting handling
 - Frame Stability Logic to prevent flickering
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -31,7 +31,7 @@ Libraries: OpenCV, NumPy, OS, Winsound
 Algorithm: LBPH (Local Binary Patterns Histogram)  
 Face Detection: Haar Cascade Classifier  
 
----
+
 
 ## 📁 Project Structure
 
@@ -47,7 +47,7 @@ FACE_MASK_DETECTION/
 ├── trained_model.xml
 └── README.md
 
----
+
 
 ## 🚀 How to Run the Project
 
@@ -57,7 +57,7 @@ Open terminal and run:
 
 pip install opencv-contrib-python numpy
 
----
+
 
 ### 2️⃣ Data Collection
 
@@ -68,7 +68,7 @@ Run:
 
 python capture_photos.py
 
----
+
 
 ### 3️⃣ Training
 
@@ -81,7 +81,7 @@ python train_ai.py
 This will generate:
 trained_model.xml
 
----
+
 
 ### 4️⃣ Final Detection
 
@@ -91,7 +91,7 @@ python detect_mask.py
 
 Press 'Q' to exit the program.
 
----
+
 
 ## 📊 System Logic
 
@@ -109,14 +109,14 @@ Step 4: Feedback
 Green box = Access Granted  
 Red box + Beep = Access Denied  
 
----
+
 
 ## 🤝 Acknowledgments
 
 OpenCV – For providing an open-source Computer Vision library.  
 LBPH Research – For texture-based recognition algorithm.  
 
----
+
 
 ## 📌 Future Improvements
 
@@ -125,6 +125,7 @@ LBPH Research – For texture-based recognition algorithm.
 - Mobile app support  
 - Multi-user detection system  
 
----
 
-👩‍💻 Developed By: Mira Ribadiya  
+
+ Developed By: Mira Ribadiya  
+
