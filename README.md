@@ -1,7 +1,7 @@
 # 🛡️ AI-Powered Face Mask Detection  
 ### Real-Time Access Control System
 
-📄 Project Report: [Click Here to View](https://drive.google.com/file/d/1WbBibllIR1VuuwdJrDRzXzUaU7qevoAc/view?usp=drive_link)
+📄 Project Report: [Click Here to View](https://drive.google.com/file/d/1WbBibllIR1VuuwdJrDRzXzUaU7qevoAc/view?usp=sharing)
 
 ## 🔍 Overview
 
@@ -121,4 +121,5 @@ Press **Q** to exit.
 ## 👩‍💻 Developed By
 
 **Mira Ribadiya**
+
 
